@@ -1,6 +1,6 @@
 {
   "name": "ember-html5-audio",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Ember.js component that serves as a HTML5 audio element.",
   "directories": {
     "doc": "doc",
