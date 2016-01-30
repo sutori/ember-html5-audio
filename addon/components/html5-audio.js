@@ -1,6 +1,24 @@
 import Ember from 'ember';
 import InboundActions from 'ember-component-inbound-actions/inbound-actions';
 
+/*
+ * Wraps an HTML5 audio element.
+ *
+ * Input:
+ * - src: the source of the audio file.
+ *
+ * Events (see https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Media_events):
+ * - durationChange: sent on `durationchange` event (https://developer.mozilla.org/en-US/docs/Web/Events/durationchange)
+ * - loadedMetadata: sent on `loadedmetadata` event (https://developer.mozilla.org/en-US/docs/Web/Events/loadedmetadata)
+ * - ended: sent on `ended` event
+ * - timeUpdate: sent on `timeupdate` event (https://developer.mozilla.org/en-US/docs/Web/Events/timeupdate)
+ *
+ * Actions:
+ * - play
+ * - pause
+ * - seek
+ *
+ */
 export default Ember.Component.extend(InboundActions, {
   tagName: 'audio',
   attributeBindings: ['cleanSrc:src'],
@@ -46,14 +64,14 @@ export default Ember.Component.extend(InboundActions, {
 
   /* Actions */
   actions: {
-    seek: function(position) {
-      this.$()[0].currentTime = position;
-    },
     play: function() {
       this.$()[0].play();
     },
     pause: function() {
       this.$()[0].pause();
+    },
+    seek: function(position) {
+      this.$()[0].currentTime = position;
     }
   }
 });
