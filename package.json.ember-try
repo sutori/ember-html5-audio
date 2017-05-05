@@ -1,19 +1,17 @@
 {
   "name": "ember-html5-audio",
-  "version": "1.0.0",
-  "description": "Ember.js component that serves as a HTML5 audio element.",
+  "version": "0.0.0",
+  "description": "The default blueprint for ember-cli addons.",
   "keywords": [
-    "ember-addon",
-    "html5-audio",
-    "audio"
+    "ember-addon"
   ],
   "license": "MIT",
-  "author": "Yoran Brondsema <yoran@sutori.com>",
+  "author": "",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "https://github.com/hstry/ember-html5-audio",
+  "repository": "",
   "scripts": {
     "build": "ember build",
     "start": "ember server",
@@ -35,12 +33,10 @@
     "ember-cli-shims": "^1.0.2",
     "ember-cli-sri": "^2.1.0",
     "ember-cli-uglify": "^1.2.0",
-    "ember-component-inbound-actions": "^1.2.1",
     "ember-disable-prototype-extensions": "^1.1.0",
     "ember-export-application-global": "^1.0.5",
     "ember-load-initializers": "^0.6.0",
     "ember-resolver": "^2.0.3",
-    "ember-sinon": "^0.7.0",
     "ember-source": "~2.12.0",
     "ember-welcome-page": "^2.0.2",
     "loader.js": "^4.2.3"
